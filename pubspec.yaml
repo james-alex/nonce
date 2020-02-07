@@ -1,0 +1,10 @@
+name: nonce
+description: A utility class with a single method to generate random alphanumeric strings.
+version: 0.0.1
+homepage: https://github.com/james-alex/nonce
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dev_dependencies:
+  test: ^1.12.0
