@@ -1,6 +1,6 @@
 name: nonce
 description: A utility class with a single method to generate random alphanumeric strings.
-version: 0.0.1
+version: 0.1.0
 homepage: https://github.com/james-alex/nonce
 
 environment:

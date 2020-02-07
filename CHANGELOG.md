@@ -1,3 +1,3 @@
-## [0.0.1] - February 6, 2020
+## [0.1.0] - February 6, 2020
 
 * Initial release.
