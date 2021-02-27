@@ -27,6 +27,9 @@ class Nonce {
     return Nonce._(value);
   }
 
+  /// Constructs a [unique] nonce `16` characters in length.
+  factory Nonce.key() => Nonce.unique(16);
+
   /// The alphanumeric string represented by this nonce.
   final String _value;
 
