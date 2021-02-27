@@ -10,14 +10,14 @@ void main() {
         length += 32;
       }
 
-      final nonce = Nonce.generate(length);
+      final nonce = Nonce(length);
 
       expect(nonce.length, equals(length));
 
       expect(
         RegExp('[abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'
                 ']{$length}')
-            .hasMatch(nonce),
+            .hasMatch(nonce.toString()),
         equals(true),
       );
     }
