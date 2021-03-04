@@ -38,10 +38,10 @@ class Nonce {
 
   /// Generates a random alphanumeric string
   /// [length] characters long.
-  static String generate([int length = 32]) {
+  static String generate([int length = 32, bool secure = false]) {
     assert(length > 0);
 
-    final random = Random();
+    final random = secure ? Random.secure() : Random();
 
     final charCodes = List<int>.generate(length, (_) {
       late int codeUnit;
