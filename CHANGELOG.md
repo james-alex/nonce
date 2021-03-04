@@ -1,3 +1,8 @@
+## [1.2.0] - March 4, 2021
+
+* Reverted [Nonce.generate] to using optional parameters and replaced
+the [secure] and [seed] parameters with the [random] parameter.
+
 ## [1.1.0] - March 3, 2021
 
 * Changed [Nonce.generate]'s optional [length] parameter to a named parameter.

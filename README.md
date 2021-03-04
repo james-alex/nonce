@@ -15,20 +15,19 @@ import 'package:nonce/nonce.dart';
 
 The static method [generate] can be used to generate random alphanumeric strings.
 
-[generate] has 3 parameters: [length], [seed], and [secure].
+[generate] has 2 optional parameters, [length] which defines how many characters
+to generate, and [random] which allows you provide a [Random] to use to generate
+the characters.
 
 ```dart
 // Generate a string 32 characters long.
 print(Nonce.generate()); // Osp54up7WU6P3U97Jz92p9j892n9LP7z
 
 // Generate a string 64 characters long.
-print(Nonce.generate(length: 64)); // LDwpr1H74qm894jbd15Lj63wF5RUL07r4L9XOY7zVMz7fLbBCXa68Y6oPw0N9XgV
-
-// Generate a string using a seed.
-print(Nonce.generate(seed: DateTime.now().millisecondsSinceEpoch));
+print(Nonce.generate(64)); // LDwpr1H74qm894jbd15Lj63wF5RUL07r4L9XOY7zVMz7fLbBCXa68Y6oPw0N9XgV
 
 // Generate a nonce using a secure [Random].
-print(Nonce.generate(secure: true));
+print(Nonce.generate(32, Random.secure()));
 ```
 
 `generate()` does not rely on Base64 encoding, instead it generates ASCII character codes directly.

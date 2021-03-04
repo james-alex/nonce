@@ -2,7 +2,7 @@ name: nonce
 description: >-
   Nonce contains a static generator that generates random alphanumeric strings,
   and can be constructed as an object containing a generated string.
-version: 1.1.0
+version: 1.2.0
 homepage: https://github.com/james-alex/nonce
 
 environment:
