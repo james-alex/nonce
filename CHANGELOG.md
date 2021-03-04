@@ -1,3 +1,13 @@
+## [1.1.0] - March 3, 2021
+
+* Changed [Nonce.generate]'s optional [length] parameter to a named parameter.
+
+* Add parameter to provide a seed to [Nonce.generate].
+
+* Add option to use a secure random to [Nonce.generate].
+
+* Added the [Nonce.secure] factory constructor.
+
 ## [1.0.0] - March 3, 2021
 
 * Migrated to null-safe code.
