@@ -27,7 +27,7 @@ print(Nonce.generate(length: 64)); // LDwpr1H74qm894jbd15Lj63wF5RUL07r4L9XOY7zVM
 // Generate a string using a seed.
 print(Nonce.generate(seed: DateTime.now().millisecondsSinceEpoch));
 
-// Generare a nonce using a secure [Random].
+// Generate a nonce using a secure [Random].
 print(Nonce.generate(secure: true));
 ```
 
