@@ -1,3 +1,7 @@
+## [1.2.1] - September 16, 2023
+
+* Dart 3 is out. Updated environment.
+
 ## [1.2.0] - March 4, 2021
 
 * Reverted [Nonce.generate] to using optional parameters and replaced
